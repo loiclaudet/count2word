@@ -1,6 +1,6 @@
 {
   "name": "count2word",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate the number of occurrences of each word in a text",
   "main": "src/index.js",
   "scripts": {
