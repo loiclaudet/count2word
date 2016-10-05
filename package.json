@@ -4,7 +4,7 @@
   "description": "Calculate the number of occurrences of each word in a text",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/index.js -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/DL0dz/count2word/issues"
   },
-  "homepage": "https://github.com/DL0dz/count2word#readme"
+  "homepage": "https://github.com/DL0dz/count2word#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.1.0"
+  }
 }
