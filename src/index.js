@@ -6,7 +6,7 @@
  * @return {Object} An object with each word as a property and their occurence as a value.
  *
  */
-export default function (text) {
+module.exports = function (text) {
   const out = {}
   const re = /\W[a-bd-z]'|[^a-z'\-ÀÁÂĂÂÃÈÉÊÌÎÍÒÓÔÕȘȚÙÚĂĐĨŨƠàáăââãèéêîìíòóôõùúășțđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềếềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]/g
   const wordsArray = text
