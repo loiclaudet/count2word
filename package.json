@@ -1,0 +1,23 @@
+{
+  "name": "count2word",
+  "version": "1.0.0",
+  "description": "Calculate the number of occurrences of each word in a text",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DL0dz/count2word.git"
+  },
+  "keywords": [
+    "count",
+    "words"
+  ],
+  "author": "Loic Laudet <dlodz.me@gmail.com> (https://twitter.com/loiclaudet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DL0dz/count2word/issues"
+  },
+  "homepage": "https://github.com/DL0dz/count2word#readme"
+}
