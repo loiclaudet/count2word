@@ -7,19 +7,19 @@
  *
  */
 module.exports = function (text) {
-  const out = {}
   const re = /n't|\W[a-z]'|'[a-z]\W|[^a-z'ÀÁÂĂÂÃÈÉÊÌÎÍÒÓÔÕȘȚÙÚĂĐĨŨƠàáăââãèéêîìíòóôõùúășțđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềếềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]/g
-  const wordsArray = text
+
+  return text
     .toLowerCase()
-    .replace(re, ` `)
+    .replace(re, ' ')
     .split(' ')
     .filter(word => word.length > 1)
-    .forEach(word => {
-      if (word in out) {
-        out[word] += 1
+    .reduce((acc, word) => {
+      if (!acc[word]) {
+        acc[word] = 1
       } else {
-        out[word] = 1
+        acc[word] += 1
       }
-    })
-  return out
+      return acc
+    }, {})
 }
